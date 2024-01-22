@@ -1,0 +1,29 @@
+const mongoose = require("mongoose")
+
+const CustmerSchema = new mongoose.Schema({
+name:{
+    type:String,
+    required:true
+},
+phone:{
+    type:String,
+    required:true
+},
+address:{
+    type:String,
+    required:true
+},
+guri_NO:{
+    type:String,
+    required:true
+},
+Zone:{
+    type:String,
+    required:true
+}
+
+},{timestamps:true})
+
+const custmerModal = mongoose.model("custmer",CustmerSchema)
+
+module.exports=custmerModal
