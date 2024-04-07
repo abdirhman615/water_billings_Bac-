@@ -39,4 +39,4 @@ App.use("/login",loginRouter)
 App.use("/receipt",receiptRouter)
 App.use("/summary",DashboardSummary)
 App.use("/auth",auth)
-// App.use("/owner",onwerroute)
+
